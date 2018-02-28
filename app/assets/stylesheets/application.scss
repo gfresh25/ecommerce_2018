@@ -17,8 +17,80 @@
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
 
-.show-pic {
-  height: 200px;
-  width: 200px;
+
+/*font-family: 'Berkshire Swash', cursive;
+font-family: 'Quattrocento Sans', sans-serif;*/
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'font-awesome';
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Cinzel|Quattrocento+Sans');
+
+
+
+body{
+  background-color: #e5e0ce; 
+}
+
+ .padded{
+  padding-top: 50px;
+  text-align: center;}
+
+ .title {
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.title-nav{
+  padding: 10px 10px 0px 0px;
+  font-size: 30px;
+  color: white;
+}
+
+.title2 {
+  text-align: center;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+
+.thumb{
+  height: 50px;
+  width: 50px;
+}
+.store-front-pic{
+  height: 150px;
+
+}
+.modal-name{
+  font-family: 'Cinzel', serif;
+}
+
+.well-storefront{
+  height: 325px;
+}
+
+.show-pic, .storefront-pic{
+  height: 350px;
+}
+
+
+.well, .modal .modal-dialog .modal-content {
+
+  background-color: #d1ccba;
+}
+
+.navbar-default {
+  background-color: white;
+}
+
+.navbar-default .navbar-nav > li > a{
+  color: black;
+}
+
+body.modal-open{
+  background-color: #d1ccba;
+}
+
+.cart-pic{
+  height: 50px;
+  width: auto;
 }
 

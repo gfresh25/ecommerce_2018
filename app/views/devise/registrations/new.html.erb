@@ -8,6 +8,10 @@
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
+  <div class="field">               <!-- Everyone who signs in is a guest -->
+    <%= f.hidden_field :role, value: "guest" %> 
+  </div>
+
   <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>

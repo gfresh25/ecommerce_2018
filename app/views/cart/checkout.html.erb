@@ -1,2 +1,15 @@
-<h1>Cart#checkout</h1>
-<p>Find me in app/views/cart/checkout.html.erb</p>
+<h1>Thanks for Shopping with us, <em><%= current_user.email %></em>! </h1>
+
+<p>Let's review your order <%= @order.id %>:</p>
+
+<% @order.order_items.each do |product, quantity| %> 
+	<ul>
+		<li><%= Product.find(product).name %>, <%= quantity %>  </li>
+	</ul>
+	<% end %> 
+
+	<p>
+		<strong>Order Total:</strong><%= number_to_currency @order.grand_total %> 
+	</p>
+
+ <%= link_to "Finalize order?", checkout_path, class: "btn btn-success"%>
