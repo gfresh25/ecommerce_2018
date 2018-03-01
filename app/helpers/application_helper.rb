@@ -1,7 +1,7 @@
 module ApplicationHelper
 
 	def count_items
- 		LineItem.count
+ 		current_order.line_items.count
  	end
 
 end

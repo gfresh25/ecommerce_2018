@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get 'checkout'=>'cart#checkout'			#read checkout
 
+  post 'order_complete' => 'cart#order_complete'
+
   post 'edit_line_item' => 'cart#edit_line_item'
 
   get 'delete_line_item' => 'cart#delete_line_item'

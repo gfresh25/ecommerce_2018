@@ -12,7 +12,7 @@
 
   <body>
     <!-- Start of nav bar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -55,7 +55,7 @@
             <li><%= link_to "View Cart", view_order_path %></li>
           </ul>
          
- 
+
 
           <% if user_signed_in? %>
             
@@ -66,11 +66,8 @@
                 <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
               </ul>
             </li>
-
-            
-          
+   
           <% end %>
-            <li></li>
             <!-- If you are not signed in, gives you links to sign up or sign in -->
             <% if !user_signed_in? %>
             <li><%= link_to "Sign In", user_session_path  %></li>
@@ -90,7 +87,7 @@
 
             <% end %> 
 
-                    </ul>
+           
           <ul class="nav navbar-nav navbar-right nav-title">   
             
             <li><%= image_tag "shopify.png", class: "thumb" %></li>
